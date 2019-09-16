@@ -1,0 +1,216 @@
+.hero {
+  padding: 3rem 0;
+  height:80vh;
+}
+.price-list:hover {
+    transition: .2s ease-in  !important;
+    /* -webkit-transform: scale(1.1)  !important;
+    transform: scale(1.1) !important; */
+    border: 1px solid white !important;
+    color:white !important;
+    z-index: 999;
+}
+.price-list{
+    text-shadow: 1px 1px 3px #1b1b1b;
+    margin-bottom: 15px;
+}
+.hero.scrolled {
+  /*margin-top: 50px;*/
+  padding-top: 90px;
+  background: black;
+}
+.job-year > .mat-chip-list-wrapper {
+    flex-wrap: unset !important;
+}
+
+mat-card-content ul {
+  letter-spacing: 2px; 
+  line-height: 35px;
+}
+.intro-shadow{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  top: 100px;
+  position: absolute;  
+  z-index: 1800;    
+  right: 0;
+  left: 0;
+  width: 70%;
+}
+mat-card mat-card-title mat-icon{
+  z-index: 10;
+  border: 1px white;
+  background-color: white;
+  color: #343a40;
+  height: auto;
+  width: auto;
+  padding: 1.5rem;
+  border-radius: 50%;
+}
+mat-card mat-card-title mat-divider{
+  background: white;
+}
+.middle-card-content{
+  letter-spacing: 2px;
+  line-height: 25px;
+}
+
+.middle-card-content p{
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+.intro{
+  background-color: #00000061;
+  height: 350px;
+}
+.intro > mat-card-content{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  letter-spacing: 2px; 
+  line-height: 25px;
+}
+.intro mat-card-content > h4, .intro mat-card-content > h1{
+  padding: 1rem;
+}
+
+.card-section{
+  padding: 3rem;
+}
+
+.job-section{
+  padding: 3rem 0;
+}
+.job-section > div.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.job-section > div.container > div{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.job-section > div.container > div > mat-card{
+  color: #fff;
+  margin-bottom: 1.5rem;
+} 
+.job-section mat-card-content ul li {
+  list-style-position: outside;
+  padding: 10px;
+  display: block;
+}
+
+.job-section mat-card {
+  width: 90%;
+}
+
+.job-title {
+  width: auto;
+  display: inline-flex;
+  font-size: 1.75rem;
+}
+
+.job-description span {
+  display: flex;
+  align-items: baseline;
+}
+
+.job-description span > p{
+  margin-bottom: 0;
+}
+.job-description span > mat-icon{
+    height: unset;
+    padding-right: .5rem;
+    width: unset;
+}
+@media (max-width: 425px)  {
+  .hero {
+    height:60vh;
+  }
+  .intro {
+    height:260px
+  }
+  .intro mat-card-content{
+    font-size: 70%;
+  }
+  .intro mat-card-content > h4, .intro mat-card-content > h1{
+    padding: 0;
+  }
+  .intro mat-card-content > h1{
+    font-size: 200%;
+  }
+  .card-section{
+    padding: 1rem;
+  }
+  .price-list mat-card-title mat-icon{
+    font-size: 100%;
+    padding: 1rem;
+  }
+  .middle-card-content p{
+    font-size: 150%;
+  }
+  .job-section > div.container > div{
+    justify-content: center;
+  }
+}
+@media (max-width: 767px)  {
+  .job-title{
+    display: flex;
+    font-size: 60%;
+    font-weight: bold
+  }
+  .job-section > div > div{
+    justify-content: space-between;
+  }
+  .job-section > div > div > mat-card{
+    max-width: 100%;
+  }
+
+  .job-section mat-card+div {
+    margin-left: .25rem!important;
+  }
+  .job-section mat-card-content ul li {
+    font-size: 60%;
+  }
+
+  .job-section mat-card-content ul{
+    padding-left: 0;
+    line-height: 30px;
+    letter-spacing: .01rem;
+  }
+  
+  .intro{
+    width: 100%
+  }
+
+  .intro h4{
+    font-size: 150%;
+  }
+  .intro h1{
+    font-size: 260%;
+  }
+  .intro-shadow{
+    top:100px !important;
+  }
+  /* mat-card mat-card-title mat-icon{
+    z-index: 10;
+    font-size: 300%;
+    /* height: 50% !important;
+    width: 25% !important;
+  } */
+  .middle-card-content{
+    font-size: 100%;
+  }
+  mat-card mat-card-title mat-icon{
+    font-size: 200%;
+  }
+}
+

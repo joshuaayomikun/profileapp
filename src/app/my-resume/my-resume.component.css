@@ -1,0 +1,257 @@
+.scroll-section {
+    margin: 3rem;
+}
+.intro{
+    padding: 3rem;
+}
+.intro > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.schoolImage{
+    margin: 1.5rem;
+}
+
+.schoolLogoDiv{
+    border: 1px solid white;
+    margin: 1.2rem
+}
+
+.academic-year{
+    font-weight: bold;
+}
+
+.certificate{
+    font-size: 200%;
+}
+
+.map a{
+    color:white;
+}
+.map {
+    right: 0;
+    margin-left: 1rem;
+}
+.about-me-mat-card{
+    padding: 1rem;
+    color: #fff;
+    padding-top: 3rem;
+
+}
+.about-me-mat-card mat-card-content p:nth-child(1){
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+}
+.about-me-mat-card mat-card-content p:nth-child(2){
+    letter-spacing: .00005rem;
+    text-align: justify;
+    color: #fff;
+    line-height: 25px;
+}
+.profile-pic-div{
+    top: 100px;
+    z-index:1000;
+    padding: 3rem;
+    position:absolute; 
+}
+.scroll-section mat-card mat-card-title{
+    font-size: 1.75rem;
+}
+#paragraph2 mat-list-item mat-icon {
+    padding-right: 20px;
+}
+#paragraph2 mat-list-item {
+    height: unset;
+    margin: 1rem;
+}
+#paragraph2 mat-list-item span{
+    display: flex;
+}
+#paragraph2 mat-list-item span p{
+    margin: 0;
+}
+
+#paragraph3 mat-chip-list {
+    width:120px;
+    text-align: right;
+    justify-content: flex-end;
+}
+#paragraph3 mat-chip-list mat-chip{
+    margin-left: auto;
+}
+.map-fixed{
+    top: 280px;
+    width: 340px;
+    margin-right: 3rem;
+    position: fixed;
+}
+.profile-pic-div-fixed{
+    right: 100px;
+    position: fixed;
+    top: 80px !important;
+    padding: 0;
+}
+.profile-pic-div-fixed img{
+    width: auto;
+}
+.credentials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 75%;
+}
+.page-name{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    top:0; 
+    position: absolute; 
+    right: 0; 
+    left: 0; 
+    padding-top: 90px; 
+    z-index: 1800;
+}
+@media (max-width: 375px)  {
+    .page-name h4 {
+        margin-right: 60px !important;
+    }
+
+    #paragraph3 mat-chip-list {
+        width: 238px !important;
+    }
+}
+@media (max-width: 425px)  {
+    .intro{
+       padding: .25rem !important;
+    }
+    .intro > div {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+    .about-me-mat-card mat-card-content p:nth-child(1){
+        font-size: 1.5rem;
+    }
+    .about-me-mat-card{
+        padding-top: 1rem;
+    }
+    .map {
+        margin-bottom: 1rem;
+        margin-left: 0 !important;
+    }
+
+    .profile-pic-div{
+        padding: 1rem;
+    }
+    .profile-pic-div img{
+        width: auto;
+        height: 100px !important;
+    }
+
+    .page-name{
+        justify-content: flex-end;
+    }
+
+    .page-name h4{
+        margin-right: 100px;
+    }
+
+    .scroll-section {
+        margin: 1rem;
+    }
+
+    #paragraph3 mat-chip-list {
+        width: 205px !important;
+    }
+
+}
+@media (max-width: 599px)  {
+    .intro > div {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+    .profile-pic-div{
+        padding: .25rem;
+    }
+    .profile-pic-div img{
+        width: auto;
+        height: 140px;
+    }
+    .scroll-section {
+        margin: 1rem;
+    }
+}
+@media (max-width: 768px)  {
+    .map mat-list{
+        overflow: auto;
+        width: 100%;
+        justify-content: space-between;
+        padding: 0;
+    }
+    .map mat-list a{
+        line-height: 9px;
+        font-size: 70%;
+        
+    }
+    .map mat-card {
+        padding: 0;
+    }
+    .map{
+        top:71px;   
+        margin-left: 1rem;
+    }
+    .map-fixed{
+        top: 70px;
+        z-index: 10001;
+        width: 100% !important;
+    }
+    .map-fixed mat-list {
+        display: inline-flex;
+    }
+    .map-fixed mat-list-item {
+        height: unset;
+    }
+    .map-fixed mat-list a{
+        line-height: unset;
+        
+    }
+
+    .intro{
+        padding: 1rem;
+    }
+    #paragraph3 mat-chip-list {
+        width:200px;
+    }
+    #paragraph3 mat-list-item {
+        height: unset;
+        margin: 1rem;
+    }
+    .credentials {
+        width: 100%;
+        margin: 0;
+    }
+    .profile-pic-div-fixed{
+        position: fixed;
+        top: 0 !important;
+        padding: 0;
+        z-index: 10002;
+        left: 0;
+    }
+    .profile-pic-div-fixed img{
+        width: auto;
+        height: 70px !important;
+    }
+}
+
+@media (max-width: 1024px){
+    .map-fixed{
+        margin-right: 0;
+        width: 31%;
+    } 
+    .profile-pic-div{
+        top: 10px;
+    }
+}

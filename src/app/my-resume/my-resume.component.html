@@ -1,0 +1,205 @@
+<div appScrollSpyDirective [spiedTags]="['MAT-CARD']" (sectionChange)="onSectionChange($event)">
+  <div class="bg-dark">
+    <div class="page-name">
+      <h4>My Resume</h4>
+    </div>
+    <div class="pt-5 pb-5 hero" style="height:40vh">
+    </div>
+    <div class="profile-pic-div">
+      <img width="200" height="200" class="rounded-circle"
+        src="https://media.licdn.com/dms/image/C5603AQEHFPNNFTst8A/profile-displayphoto-shrink_800_800/0?e=1568851200&v=beta&t=xukWumiPYJCfDWZTmjpEkyJHwEANJLV7DwlLlg17Gfw" />
+    </div>
+    <app-particles [particleStyle]="myStyle"></app-particles>
+  </div>
+  <div class="intro">
+    <div>
+      <div class="credentials">
+        <mat-card class="about-me-mat-card shadow bg-dark">
+          <mat-card-content class="text-white">
+            <p>Anthony Oluitan</p>
+            <p>I am goal driven, self-motivated and
+              resourceful, with passion for achieving goals and tasks assigned in a dynamic organisation/institution.
+              Over
+              time, I have gained technical, business and management skills via education and work place experiences.
+              I am able to work in a stimulating and challenging environment to optimise my capacity and create room for
+              acquisition of new skills
+            </p>
+          </mat-card-content>
+        </mat-card>
+        <div class="scroll-section">
+          <mat-card id="paragraph1" class="bg-dark text-white">
+            <mat-card-title>Academic Qualification
+                <mat-divider class="bg-white text-white"></mat-divider></mat-card-title>
+            <mat-card-content style="letter-spacing: 2px; line-height: 25px;">
+              <mat-list class="border border-white m-2">
+                <mat-list-item class="text-white">October2012</mat-list-item>
+                <mat-list-item class="text-white h4">MSc Business Information Systems Management </mat-list-item>
+                <mat-list-item class="text-white">Middlesex University, London. </mat-list-item>
+                <mat-list-item class="text-white">(Distinction)</mat-list-item>
+              </mat-list>
+              <mat-list class="border border-white m-2">
+                <mat-list-item class="text-white">August 2011</mat-list-item>
+                <mat-list-item class="text-white h4">BSc (Hons) Business Information Technology</mat-list-item>
+                <mat-list-item class="text-white">Middlesex University, London. </mat-list-item>
+                <mat-list-item class="text-white">(Second Class Honours)</mat-list-item>
+              </mat-list>
+              <mat-list class="border border-white m-2"> 
+                <mat-list-item class="text-white">August 2011</mat-list-item>
+                <mat-list-item class="text-white h4">(Java Technologies)</mat-list-item>
+                <mat-list-item class="text-white">National Institute of Information Technology</mat-list-item>
+              </mat-list>
+            </mat-card-content>
+          </mat-card>
+          <mat-card id="paragraph2" class="bg-dark text-white mt-5">
+            <mat-card-title>Work History<mat-divider class="bg-white text-white"></mat-divider></mat-card-title>
+            <mat-card-content>
+              <mat-list class="border border-white m-2">
+                <mat-list-item class="text-white">Software Developer</mat-list-item>
+                <mat-list-item class="text-white">Sidmach technologies</mat-list-item>
+                <mat-list-item class="text-white">
+                  <span><mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>Gather and analyse software solutions requirements</p></span>
+                </mat-list-item>
+                <mat-list-item class="text-white">
+                  <span><mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>Design and develop enterprise and custom solutions using ASP.NET technologies and other client side tools like JavaScript and JQuery/</p></span>
+                </mat-list-item>
+                <mat-list-item class="text-white">
+                  <span><mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>Systems Integration: Web Services Implementation using Web API,
+                    WCF technologies.</p></span>
+                </mat-list-item>
+                <mat-list-item class="text-white">
+                  <span><mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>Design and Implementation of workflows like Leave Application, Document Tracker, and Appraisal Form incorporated with the company’s SharePoint Server (Portal).</p></span>
+                </mat-list-item>
+                <mat-list-item class="text-white">
+                  <span><mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>Reporting Solutions</p></span>
+                </mat-list-item>
+                <mat-list-item class="text-white">
+                  <span><mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>Deploy developed solutions on customers/end-users’ platforms</p></span>
+                </mat-list-item>
+                <mat-list-item class="text-white">
+                  <span><mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>End-user support</p></span>
+                </mat-list-item>
+              </mat-list>
+              <mat-list class="border border-white m-2">
+                <mat-list-item class="text-white">Project Director</mat-list-item>
+                <mat-list-item class="text-white">Canbillaire Nigeria Ltd.</mat-list-item>
+
+                <mat-list-item class="text-white">
+                  <span><mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>Business model development</p></span>
+                </mat-list-item>
+
+                <mat-list-item class="text-white">
+                  <span><mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>System Architecture and Development</p></span>
+                </mat-list-item>
+                <mat-list-item class="text-white">
+                  <span><mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>Plan and allocate resources for software projects.</p></span>
+                </mat-list-item>
+                <mat-list-item class="text-white">
+                  <span><mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>Project Forecasting and Budget Tracking,</p></span>
+                </mat-list-item>
+                <mat-list-item class="text-white">
+                  <span><mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>Sign-Off project milestones and deliverables</p></span>
+                </mat-list-item>
+                <mat-list-item class="text-white">
+                  <span><mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>Implement Change Management, Projects Closure and Handover
+                    processes.</p></span>
+                </mat-list-item>
+                <mat-list-item class="text-white">
+                  <span><mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>Validation of all documents provided for Solutions Deployment</p></span>
+                </mat-list-item>
+                <mat-list-item class="text-white">
+                  <span><mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>Monitor and manage projects deployment</p></span>
+                </mat-list-item>
+              </mat-list>
+              <mat-list class="border border-white m-2">
+                <mat-list-item class="text-white">IT Project Manager</mat-list-item>
+                <mat-list-item class="text-white">Galaxy Backbone Ltd.</mat-list-item>
+                <mat-list-item class="text-white">
+                  <span><mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>Manage all project information on Microsoft Dynamics CRM</p></span>
+                </mat-list-item>
+                <mat-list-item class="text-white">
+                  <span><mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>Preparation of Reports such as; Revenue/Work-In-Progress, project
+                    turn-around time.</p></span>
+                </mat-list-item>
+                <mat-list-item class="text-white">
+                  <span><mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>Project Forecasting and Budget Tracking</p></span>
+                </mat-list-item>
+                <mat-list-item class="text-white">
+                  <span><mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>Design Project Initiation Documents</p></span>
+                </mat-list-item>
+                <mat-list-item class="text-white">
+                  <span><mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>Responsible for Change Management, Projects Closure and Handover
+                    processes.</p></span>
+                </mat-list-item>
+                <mat-list-item class="text-white">
+                  <span><mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>Validation of all documents provided for Solution Deployment</p></span>
+                </mat-list-item>
+                <mat-list-item class="text-white">
+                  <span><mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>Supervise and manage technical team on the deployment of services
+                    on customers’ sites</p></span>
+                </mat-list-item>
+              </mat-list>
+            </mat-card-content>
+          </mat-card>
+          <mat-card id="paragraph3" class="bg-dark text-white mt-5">
+            <mat-card-title>Trainings</mat-card-title>
+            <mat-card-content>
+              <mat-list class="border border-white m-2 text-white">
+                  <mat-list-item class="text-white">
+                      <span class="w-100 d-inline-flex justify-content-between">Partner Platform Enablement: Data platform BI Workshop - Microsoft, Nigeria
+                          <mat-chip-list class="d-inline-flex">
+                              <mat-chip color="accent"
+                                  selected>Apr 2016</mat-chip>
+                          </mat-chip-list>     </span>
+                  </mat-list-item>
+                  <mat-list-item class="text-white">
+                      <span class="w-100 d-inline-flex justify-content-between">Developing Microsoft Azure Solutions – Koenig Solutions, India
+                          <mat-chip-list class="d-inline-flex">
+                            <mat-chip color="accent"
+                                selected>Sept 2016</mat-chip>
+                          </mat-chip-list>     </span>
+                  </mat-list-item>
+                  <mat-list-item class="text-white">
+                      <span class="w-100 d-inline-flex justify-content-between">Microsoft Developer Workshop – Microsoft, USA
+                          <mat-chip-list class="d-inline-flex">
+                              <mat-chip color="accent"
+                                  selected>May 2017</mat-chip>
+                          </mat-chip-list>     </span>
+                  </mat-list-item>
+                  <mat-list-item class="text-white">
+                      <span class="w-100 d-inline-flex justify-content-between">Microsoft Dynamics 365 - Extending Functionality - Koenig Solutions, Nigeria
+                          <mat-chip-list class="d-inline-flex">
+                              <mat-chip color="accent"
+                                  selected>Sept 2017 </mat-chip>
+                          </mat-chip-list>     </span>
+                  </mat-list-item>
+              </mat-list>
+            </mat-card-content>
+          </mat-card>
+          <mat-card id="paragraph4" class="mt-5">
+            <mat-card-title></mat-card-title>
+            <mat-card-content>
+              
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+      <div class="map">
+        <mat-card class="bg-dark shadow text-white">
+          <mat-card-content class="text-white">
+            <mat-list role="list">
+              <mat-list-item><a mat-button (click)="scrollTo('paragraph1')" [className]="currentSection==='paragraph1'? 'btn btn-success':''"
+                  role="listitem">Academic Qualififcation</a></mat-list-item>
+              <mat-list-item><a mat-button (click)="scrollTo('paragraph2')" [className]="currentSection==='paragraph2'? 'btn btn-success':''"
+                  role="listitem">Work History</a></mat-list-item>
+              <mat-list-item><a mat-button (click)="scrollTo('paragraph3')" [className]="currentSection==='paragraph3'? 'btn btn-success':''"
+                  role="listitem">Trainings</a></mat-list-item>
+              <mat-list-item><a mat-button (click)="scrollTo('paragraph4')" [className]="currentSection==='paragraph4'? 'btn btn-success':''"
+                  role="listitem">Certifications & Professional memnbership</a></mat-list-item>
+            </mat-list>
+          </mat-card-content>
+        </mat-card>
+
+      </div>
+    </div>
+  </div>
+</div>

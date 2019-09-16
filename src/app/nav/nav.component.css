@@ -1,0 +1,17 @@
+.navbar.color-change {
+    z-index: 1000;
+    position: fixed;
+    background-color: white !important;
+    color:#1b1b1b !important;
+    height: 50px;
+    /* color: rgba(255,254,255,0.8); */
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    -webkit-box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    -moz-box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+  }
+  .nav-bar {
+    position: fixed;
+    z-index: 2000;
+    background: unset;
+    height: 70px;
+  }

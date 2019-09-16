@@ -1,0 +1,360 @@
+<div class="bg-dark">
+    <div class="hero">
+    </div>
+    <div class="intro-shadow" [@flyInOut]="loaded">
+        <mat-card class="intro shadow">
+            <mat-card-content>
+                <h4>Hi, Welcome to my page</h4>
+                <h1>I'm Anthony Oluitan</h1>
+                <div>
+                    <a routerLink="/resume" routerLinkActive="active" mat-button
+                        class="bg-white text-dark m-2 nav-link font-weight-bold">Check my resume</a>
+                    <a mat-button class="bg-white m-2 text-dark nav-link font-weight-bold">Contact Me</a>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <app-particles></app-particles>
+</div>
+<div class="bg-dark card-section">
+    <div class="row">
+        <div class=" col-md-4 col-sm-12 ">
+            <mat-card class="price-list shadow bg-dark text-white-50" [@flyInOut]="onceScrolled">
+                <mat-card-title class="text-center d-flex flex-column justify-content-center align-items-center">
+                    <mat-icon fontSet="far" class="fa-2x shadow" fontIcon="fa-compass"></mat-icon>
+                </mat-card-title>
+                <mat-card-content class="middle-card-content">
+                    <p class="h4">Vision</p>
+                    My vision is to enhance the inner and outer well-being of my community, I take pride in delivering
+                    outstanding services to humanity at large.
+                </mat-card-content>
+
+            </mat-card>
+        </div>
+        <div class=" col-md-4 col-sm-12 ">
+            <mat-card class="price-list shadow bg-dark text-white-50" [@flyUpIn]="onceScrolled">
+                <mat-card-title class="text-center d-flex flex-column justify-content-center align-items-center">
+                    <mat-icon fontSet="fas" class="fa-2x shadow" fontIcon="fa-briefcase"></mat-icon>
+                </mat-card-title>
+                <mat-card-content class="middle-card-content">
+                    <p class="h4">Mission</p>
+                    My personal mission is to improve the quality of life of individuals I come across. To improve my
+                    productivity for the facilitation of faster economic growth. Becoming the leading IT service
+                    provider with intelligent insights that will transform socio-economic communities. My deep interest
+                    in the vast and exciting world of technology is spurred by my education and work place experiences
+                    over the years. I aspire to grow and continuously improve my life in every aspect, lead a balanced
+                    life that positively inspires humanity.
+                </mat-card-content>
+            </mat-card>
+        </div>
+        <div class=" col-md-4 col-sm-12 ">
+            <mat-card class="price-list shadow bg-dark text-white-50" [@flyOutIn]="onceScrolled">
+                <mat-card-title class="text-center d-flex flex-column justify-content-center align-items-center">
+                    <mat-icon fontSet="far" class="fa-2x shadow" fontIcon="fa-paper-plane"></mat-icon>
+                </mat-card-title>
+                <mat-card-content class="middle-card-content">
+                    <p class="h4">Objective</p>
+                    <ul>
+                        <li><span>
+                                <mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon>To be the best in what I
+                                find myself doing
+                            </span></li>
+                        <li><span>
+                                <mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon>To implement in the best
+                                possible way what I find myself doing.
+                            </span></li>
+                        <li><span>
+                                <mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon>To render as much service
+                                to as I can to society at large
+                            </span></li>
+                    </ul>
+                </mat-card-content>
+
+            </mat-card>
+        </div>
+        <!-- <div class="container d-flex flex-md-row flex-sm-column m-auto justify-content-between">
+      
+      
+      
+  </div> -->
+    </div>
+</div>
+<div class="job-section">
+    <div class="container">
+        <div>
+            <mat-card class="bg-dark shadow">
+                <mat-card-title class="d-flex flex-column pt-4">
+                    <div>
+                        <mat-chip color="accent" class="job-title" selected>
+                            Data Scientist
+                        </mat-chip>
+
+                    </div>
+                    <div>
+                        <mat-chip color="accent" class="w-auto" selected>
+                            Sidmach technologies
+                        </mat-chip>
+                    </div>
+                </mat-card-title>
+                <mat-card-content>
+                    <ul class="job-description">
+                        <li><span>
+                                <mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon>
+                                <p>data with Excel and Power BI</p>
+                        </span></li>
+                        <li><span>
+                                <mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon>
+                                <p>Design and plan BI solutions</p>
+                        </span></li>
+                        <li><span>
+                                <mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon>
+                                <p>Develop and implement data gathering solutions to publish decision making reports</p>
+                        </span></li>
+                        <li><span>
+                                <mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon>
+                                <p>Design Data Warehouse schemas.</p>
+                        </span></li>
+                        <li><span>
+                                <mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon>
+                                <p>Implement ETL operations and processes for data warehousing systems</p>
+                        </span></li>
+                        <li><span>
+                                <mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon>
+                                <p>Analyse Big Data with R</p>
+                        </span></li>
+                        <li><span>
+                                <mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon>
+                                <p>Create and deliver Data Warehouse in Azure cloud.</p>
+                        </span></li>
+                        <li><span>
+                                <mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon>
+                                <p>Implement Predictive Models with Spark in Azure HDInsight.</p>
+                            </span></li>
+                    </ul>
+                </mat-card-content>
+            </mat-card>
+            <div class="d-flex justify-content-center ml-5">
+                <div class="align-items-end border border-dark d-flex flex-column h-100" style="width: 0;">
+                    <mat-chip color="accent" style="width: 141px;" selected>June 2016–Present</mat-chip>
+                </div>
+            </div>
+        </div>
+        <div>
+            <mat-card class="bg-dark shadow">
+                <mat-card-title class="d-flex flex-column pt-4">
+                    <div>
+                        <mat-chip-list>
+                            <mat-chip color="accent" class="job-title" selected>Software Developer</mat-chip>
+                        </mat-chip-list>
+                    </div>
+                    <div>
+                        <mat-chip color="accent" class="w-auto" selected>Sidmach technologies</mat-chip>
+                    </div>
+                </mat-card-title>
+                <mat-card-content>
+                    <ul class = "job-description">
+                        <li><span>
+                                <mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>Gather and analyse
+                                software solutions requirements</p>
+                            </span></li>
+                        <li><span>
+                                <mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>Design and develop
+                                enterprise and custom solutions using ASP.NET technologies and other
+                                client side tools like JavaScript and JQuery</p>
+                            </span></li>
+                        <li><span>
+                                <mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>Systems Integration: Web
+                                Services Implementation using Web API, WCF technologies.</p>
+                            </span></li>
+                        <li><span>
+                                <mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>Design and Implementation
+                                of workflows like Leave Application, Document Tracker, and
+                                Appraisal Form incorporated with the company’s SharePoint Server (Portal).</p>
+                            </span></li>
+                        <li><span>
+                                <mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>Reporting Solutions</p>
+                            </span></li>
+                        <li><span>
+                                <mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>Deploy developed
+                                solutions on customers/end-users’ platforms</p>
+                            </span></li>
+                        <li><span>
+                                <mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>End-user support</p>
+                            </span></li>
+                    </ul>
+                </mat-card-content>
+            </mat-card>
+            <div class="d-flex justify-content-center ml-5">
+                <div class="align-items-end border border-dark d-flex flex-column h-100" style="width: 0;">
+                    <mat-chip color="primary" class="popover" style="width: 160px;" selected>Apr 2015–June 2016
+                    </mat-chip>
+
+                </div>
+            </div>
+        </div>
+        <div>
+            <mat-card class="bg-dark shadow">
+                <mat-card-title class="d-flex flex-column pt-4">
+                    <div>
+                        <mat-chip color="accent" class="job-title" selected>Project Director</mat-chip>
+                    </div>
+                    <div>
+                        <mat-chip color="accent" selected>Canbillaire Nigeria Ltd.</mat-chip>
+                    </div>
+                </mat-card-title>
+                <mat-card-content>
+                    <ul class = "job-description">
+                        <li><span>
+                                <mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>Business model
+                                development</p>
+                            </span></li>
+                        <li><span>
+                                <mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>System Architecture and
+                                Development</p>
+                            </span></li>
+                        <li><span>
+                                <mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>Plan and allocate
+                                resources for software projects.</p>
+                            </span></li>
+                        <li><span>
+                                <mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>Project Forecasting and
+                                Budget Tracking</p>
+                            </span></li>
+                        <li><span>
+                                <mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>Sign-Off project
+                                milestones and deliverables</p>
+                            </span></li>
+                        <li><span>
+                                <mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>Implement Change
+                                Management, Projects Closure and Handover processes.</p>
+                            </span></li>
+                        <li><span>
+                                <mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>Validation of all
+                                documents provided for Solutions Deployment</p>
+                            </span></li>
+                        <li><span>
+                                <mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>Monitor and manage
+                                projects deployment</p>
+                            </span></li>
+                    </ul>
+                </mat-card-content>
+            </mat-card>
+            <div class="d-flex justify-content-center ml-5">
+                <div class="align-items-end border border-dark d-flex flex-column h-100" style="width: 0;">
+                    <mat-chip color="accent" style="width: 141px;" selected>Oct. 2014–Present</mat-chip>
+                </div>
+            </div>
+        </div>
+        <div>
+            <mat-card class="bg-dark shadow">
+                <mat-card-title class="d-flex flex-column pt-4">
+                    <div>
+                        <mat-chip color="accent" class="job-title" selected>IT Project Manager</mat-chip>
+                    </div>
+                    <div>
+                        <mat-chip color="accent" selected>Galaxy Backbone Ltd.</mat-chip>
+                    </div>
+                </mat-card-title>
+                <mat-card-content>
+                    <ul class = "job-description">
+                        <li><span>
+                                <mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>Manage all project
+                                information on Microsoft Dynamics CRM</p>
+                            </span></li>
+                        <li> <span>
+                                <mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>Preparation of Reports
+                                such as; Revenue/Work-In-Progress, project turn-around time.</p>
+                            </span></li>
+                        <li> <span>
+                                <mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>Project Forecasting and
+                                Budget Tracking</p>
+                            </span></li>
+                        <li><span>
+                                <mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>Design Project Initiation
+                                Documents</p>
+                            </span></li>
+                        <li><span>
+                                <mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>Responsible for Change
+                                Management, Projects Closure and Handover processes.</p>
+                            </span></li>
+                        <li><span>
+                                <mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>Validation of all
+                                documents provided for Solution Deployment</p>
+                            </span></li>
+                        <li><span>
+                                <mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p>Supervise and manage
+                                technical team on the deployment of services on customers’ sites</p>
+                            </span></li>
+
+                    </ul>
+                </mat-card-content>
+            </mat-card>
+            <div class="d-flex justify-content-center ml-5">
+                <div class="align-items-end border border-dark d-flex flex-column h-100" style="width: 0;">
+                    <mat-chip color="primary" selected class="popover" style="width: 160px;">Dec. 2013–Oct. 2014
+                    </mat-chip>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="p-5 bg-dark text-white">
+    <div class="row">
+        <div class="col-md-6">
+            <mat-card class=" bg-dark h-100 shadow text-white">
+                <mat-card-content class="h-100 d-flex align-items-center justify-content-center">
+                    <h3 class="text-center">
+                        Contact Me
+                    </h3>
+                </mat-card-content>
+            </mat-card>
+        </div>
+        <div class="bg-white col-md-6 shadow">
+            <form name="form" class="p-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <mat-form-field class="w-100">
+                                <input matInput required placeholder="Name" name="FullName" />
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <mat-form-field class="w-100">
+                                <input matInput type="email" required placeholder="Email" name="Email" />
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <mat-form-field class="w-100">
+                                <input matInput required placeholder="Subject" name="Subject" />
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <mat-form-field class="w-100">
+                                <textarea matInput placeholder="Message" required rows="10" name="Body"></textarea>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <button mat-flat-button type="submit" (click)="sendmail()" color="primary">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
