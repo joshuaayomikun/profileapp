@@ -9,9 +9,9 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build:ssr": "npm run build:client-and-server-bundles && npm run webpack:server",
-  "serve:ssr": "node dist/server.js",
-  "build:client-and-server-bundles": "ng build --prod && ng run profileApp:server",
-  "webpack:server": "webpack --config webpack.server.config.js --progress --colors"
+    "serve:ssr": "node dist/server.js",
+    "build:client-and-server-bundles": "ng build --prod && ng run profileApp:server",
+    "webpack:server": "webpack --config webpack.server.config.js --progress --colors"
   },
   "private": true,
   "dependencies": {
@@ -38,7 +38,7 @@
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.13.0",
+    "@angular-devkit/build-angular": "^0.803.5",
     "@angular/cli": "~7.3.0",
     "@angular/compiler-cli": "~7.2.0",
     "@angular/language-service": "~7.2.0",
