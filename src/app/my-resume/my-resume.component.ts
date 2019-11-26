@@ -16,8 +16,11 @@ export class MyResumeComponent implements OnInit {
 
   scrollTo(section) {
     const ele = this.el.nativeElement.querySelector('#' + section);
-    console.log(ele);
-    ele.scrollIntoView()
+    console.log(this.el);
+    if(ele !== null){
+      ele.scrollIntoView();
+      document.scrollingElement.scrollTop -= 176;
+    }
   }
   ngOnInit() {
     this.myStyle = {

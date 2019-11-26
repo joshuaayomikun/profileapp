@@ -19,13 +19,14 @@ export class ScrollSpyDirective {
     const mapOffset = this.el.nativeElement.querySelector('.map').offsetTop;
     const aboutMeMaCard = event.target.scrollingElement.querySelector('.about-me-mat-card').offsetTop;
     // console.log({ parentOffset }, {scrollTop});
+    console.log({ScrollingElement: event.target.scrollingElement});
     for (const child of children) {
       const element = child;
       if (this.spiedTags.some(spiedTag => spiedTag === element.tagName)) {
-        console.log({'element-offest': element.offsetTop}, {parentOffset}, {scrollTop}, {aboutMeMaCard});
+        // console.log({'element-offest': element.offsetTop}, {parentOffset}, {scrollTop}, {aboutMeMaCard});
         if ((element.offsetTop - parentOffset) <= scrollTop ) {
           currentSection = element.id;
-          console.log(element.id);
+          // console.log(element.id);
         }
       }
     }

@@ -213,6 +213,7 @@
     }
     .map-fixed mat-list-item {
         height: unset;
+        width: unset;
     }
     .map-fixed mat-list a{
         line-height: unset;

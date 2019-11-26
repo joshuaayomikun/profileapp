@@ -1,0 +1,68 @@
+[{
+    "CompanyName": "Sidmach Technologies Nigeria Limited",
+    "Positions": [{
+        "Name": "Data Engineer/BI Developer",
+        "Period":"JUNE 2016 – DEC 2019",
+        "JobDescrption":[
+            "Read and process huge files and data sets, Join disparate data sets found in data lakes, Train and evaluate machine learning models, Process live streams of data, Perform analysis on large graph data sets and social networks",
+            "Implementing ETL operations and processes using Cloud data platforms & services for data virtualizations",
+            "Provision, Load, Migrate, Import, Querying data in Azure SQL Database/Data Warehouse, PostgreSQL servers, Data Lakes, Tables & Blobs",
+            "Designing, planning & developing BI solutions such as predictive systems, recommendation and sentiment analysis solutions using Python and other business intelligence tools for clients.",
+            "Performing CRUD Operations with NoSQL Database (Azure Cosmos with SQL API), Optimize performance and scale",
+            "Developing and bundling Machine Learning models (e.g. predictive & recommender system) in web/mobile applications. https://waecbi.azurewebsites.net/"
+        ]
+    },
+    {
+        "Name": "Software Developer",
+        "Period":" APRIL 2015 - MAY 2016",
+        "JobDescrption":[
+            "Software development activities: DevOps(release manager), Scrum development, requirement gathering sessions and analysis to clients",
+            "Provided support and maintenance on live solutions: http://hrorbncerts.azurewebsites.net/, http://www.eagriculture.gov.ng/eAgricPortal/, http://www.nerdc.org.ng/eCurriculum/",
+            "Database Architecture, Application Deployment and Migration from on-prem to cloud and vice versa.",
+            "Development of the logic tier and data tier on software projects adopting the 3-tier architecture.",
+            "Deployment and customization of off-the-shelf Enterprise Solutions i.e. Microsoft Dynamics & SharePoint "
+        ]
+    },{
+
+    }]
+},
+{
+    "CompanyName":"Canbillaire Nigeria Limited",
+    "Positions":[{
+        "Name":"Consultant (Systems Architect/Data Analyst)",
+        "Period":"OCT 2014 – DEC 2019",
+        "JobDescrption":[
+            "Plan & Architect software projects. i.e. https://agent.evapp.com.ng/",
+            "API Integration for third-party agents (Zenith Bank mobile service for utility bill payment), Integrate analytics tools to extract information for business decisions. https://evapp.com.ng/.",
+            "Work closely with Business owners and relevant stakeholders to build BI reports from data hosted on AWS with 3rd party visualization apps and libraries.",
+            "Build monthly and quarterly BI reports with popular visualization tools using Postgres, MySQL data sources, writing SQL queries returning relevant data.",
+            "Provide inputs to the development of information quality metrics."
+        ]
+    }]
+},
+{
+    "CompanyName":"Clout Smith Systems",
+    "Positions":[{
+        "Name":"Consultant (Database Developer)",
+        "Period":"DEC 2014- OCT 2018",
+        "JobDescrption":[
+            "Writing stored procedures for different applications accessing the same database, troubleshoot bugs in SQL queries and databases, Develop SQL scripts as required by custom applications and Perform SQL performance tuning, Database Administration and management.",
+            "Part of UI design team using WordPress CMS, designing and implementing new features and functionality. (http://www.tetramanor.com/)",
+            "Part of the database design team on MySQL DBMS for FOIA Nigeria, making sure the schema design meets software requirements.",
+            "Development of backend features; Data access queries and functions, Provide technical support to end users."
+        ]
+    }]
+},
+{
+    "CompanyName":"Galaxy Backbone LTD",
+    "Positions":[{
+        "Name":"Dynamics ERP Specialist",
+        "Period":"DEC 2013 – OCT 2014",
+        "JobDescrption":[
+            "Managed all project activities on Microsoft Dynamics CRM implementation",
+            "Customize forms and reports in Dynamics to meet end-user needs.",
+            "Designed project forecasting and budget tracking with Dynamics CRM",
+            "Part of the development team to design an Activity Timesheet using SharePoint and Power BI for reporting."
+        ]
+    }]
+}]
