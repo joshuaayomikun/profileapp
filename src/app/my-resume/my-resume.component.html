@@ -27,26 +27,51 @@
           </mat-card-content>
         </mat-card>
         <div class="scroll-section">
-          <mat-card id="paragraph1" class="bg-dark text-white mt-5">
-            <mat-card-title>Work History<mat-divider class="bg-white text-white"></mat-divider></mat-card-title>
-            <mat-card-content>
-              <mat-list class="border border-white m-2">
-                <mat-list-item class="text-white"><h4>Sidmach technologies</h4></mat-list-item>
-                <mat-list-item class="text-white"><div class="d-flex justify-content-between w-100"> <h5>Software Developer</h5> <span>June 2015 - Dec 2019</span></div></mat-list-item>
-                <mat-list-item class="text-white d-flex">
-                  <mat-icon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon><p class="mb-2">Gather and analyse software solutions requirements</p>
-                </mat-list-item>
-              </mat-list>
-            </mat-card-content>
-          </mat-card>
+            <mat-card [id]="'paragraph1'" class="bg-dark text-white mt-5">
+              <mat-card-title>Work History<mat-divider class="bg-white text-white"></mat-divider>
+              </mat-card-title>
+              <mat-card-content>
+                <mat-list *ngFor="let work of workHistory;" class="border border-white m-2">
+                  <mat-list-item class="text-white h-auto">
+                    <h4>{{work.CompanyName}}</h4>
+                  </mat-list-item>
+                  <ng-container *ngFor="let Position of work.Positions;" >
+                    <mat-list-item class="text-white h-auto">
+                        <div class="d-flex justify-content-between w-100">
+                          <h5>{{Position.Name}}</h5> <span>{{Position.Period}}</span>
+                        </div>
+                      </mat-list-item>
+                      <mat-list-item class="text-white h-auto" *ngFor="let JobDescrption of Position.JobDescrption;">
+                        <mat-icon matListIcon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon>
+                        {{JobDescrption}}}
+                  </mat-list-item>
+                </ng-container>
+                </mat-list>
+              </mat-card-content>
+            </mat-card>
+            <mat-card [id]="'paragraph2'" class="bg-dark text-white mt-5">
+              <mat-card-title>Education History<mat-divider class="bg-white text-white"></mat-divider>
+              </mat-card-title>
+              <mat-card-content>
+                <mat-list class="border border-white m-2">
+                  <mat-list-item *ngFor="let school of education;" class="h-auto text-white">
+                    <mat-icon mat-list-icon class="h-auto w-auto"><img [src]="school.SchoolLogo" style="width: 170px; height: 70px;"></mat-icon>
+                    <h2 mat-line>{{school.SchoolName}}</h2>
+                    <p mat-line> {{school.DegreeName}}  in {{school.CourseName}}</p>
+                  </mat-list-item>
+                </mat-list>
+              </mat-card-content>
+            </mat-card>
         </div>
       </div>
       <div class="map">
         <mat-card class="bg-dark shadow text-white">
           <mat-card-content class="text-white">
             <mat-list role="list">
-              <mat-list-item><a mat-button (click)="scrollTo('paragraph1')" [className]="currentSection==='paragraph1'? 'btn btn-success':''"
-                  role="listitem">Work History</a></mat-list-item>
+              <mat-list-item>
+                <a mat-button (click)="scrollTo('paragraph1')"
+                  [className]="currentSection==='paragraph1'? 'btn btn-success':''" role="listitem">Work History</a>
+              </mat-list-item>
             </mat-list>
           </mat-card-content>
         </mat-card>

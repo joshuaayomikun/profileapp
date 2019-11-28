@@ -1,0 +1,20 @@
+[
+	{
+		"SchoolName":"Middlesex University London.",
+		"CourseName":"Business Information Systems Management",
+		"DegreeName":"MSc",
+		"SchoolLogo":"/assets/Images/SchoolLogo/middlesex.png"
+	},
+	{
+		"SchoolName":"Middlesex University London.",
+		"CourseName":"Business Information Systems Management",
+		"DegreeName":"BSc (Hons)",
+		"SchoolLogo":"/assets/Images/SchoolLogo/middlesex.png"
+	},
+	{
+		"SchoolName":"National Institute of Information Technology",
+		"CourseName":"Software Engineering",
+		"DegreeName":"Diploma",
+		"SchoolLogo":"/assets/Images/SchoolLogo/niit.png"
+	}
+]

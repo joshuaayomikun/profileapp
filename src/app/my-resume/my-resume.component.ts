@@ -1,28 +1,24 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
-
+import { ResumeService } from '../resume.service';
+import { WorkHistory } from '../work-history';
+import { Education } from '../education';
 @Component({
   selector: 'app-my-resume',
   templateUrl: './my-resume.component.html',
+  providers: [ResumeService],
   styleUrls: ['./my-resume.component.css']
 })
 export class MyResumeComponent implements OnInit {
   myStyle: object = {};
-  constructor(private el: ElementRef) { }
+  workHistory: WorkHistory[];
+  education: Education[];
   currentSection = 'Paragraph1';
-
-  onSectionChange(sectionId: string) {
-    this.currentSection = sectionId;
-  }
-
-  scrollTo(section) {
-    const ele = this.el.nativeElement.querySelector('#' + section);
-    console.log(this.el);
-    if(ele !== null){
-      ele.scrollIntoView();
-      document.scrollingElement.scrollTop -= 176;
-    }
-  }
+  constructor(private el: ElementRef, private resumeService: ResumeService) { }
   ngOnInit() {
+
+    this.getWorkHistory();
+    this.getEducation();
+
     this.myStyle = {
       position: 'absolute',
       width: '100%',
@@ -33,6 +29,29 @@ export class MyResumeComponent implements OnInit {
       right: 0,
       bottom: 0,
     };
+  }
+
+  onSectionChange(sectionId: string) {
+    this.currentSection = sectionId;
+  }
+
+  getWorkHistory(): void {
+    this.resumeService.getWorkHistory()
+      .subscribe(workHistory => (this.workHistory = workHistory));
+  }
+
+  getEducation(): void {
+    this.resumeService.getEducation()
+      .subscribe(education => (this.education = education));
+  }
+
+  scrollTo(section) {
+    const ele = this.el.nativeElement.querySelector('#' + section);
+    console.log(this.el);
+    if (ele !== null) {
+      ele.scrollIntoView();
+      document.scrollingElement.scrollTop -= 176;
+    }
   }
 
 }
