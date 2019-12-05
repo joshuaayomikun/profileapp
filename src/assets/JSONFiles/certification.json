@@ -1,0 +1,27 @@
+[
+  {
+	  "OrganizatioName":"ITIL",
+	  "CertificateName":"ITIL 4 Foundation",
+	  "CertificateLogo":"/assets/Images/CertificateLogo/itil.png"
+  },
+  {
+	  "OrganizatioName":"EDX and IBM",
+	  "CertificateName":"IBM Certified Data Scientist (EDX Verified Certificate of achievement)",
+	  "CertificateLogo":"/assets/Images/CertificateLogo/ibm.png"
+  },
+  {
+	  "OrganizatioName":"Microsoft",
+	  "CertificateName":"MCP Analysing and Visualizing Data with Power BI",
+	  "CertificateLogo":"/assets/Images/CertificateLogo/mcppowerbi.png"
+  },
+  {
+	  "OrganizatioName":"Microsoft",
+	  "CertificateName":"MCP Dynamics 365 Customization and Configuration",
+	  "CertificateLogo":"/assets/Images/CertificateLogo/mcpdynamics356.png"
+  },
+  {
+	  "OrganizatioName":"Microsoft",
+	  "CertificateName":"MCSA Office 365",
+	  "CertificateLogo":"/assets/Images/CertificateLogo/mcsaoffice356.png"
+  }
+]

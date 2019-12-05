@@ -185,9 +185,6 @@ mat-card mat-card-title mat-divider{
   .job-section mat-card+div {
     margin-left: .25rem!important;
   }
-  /* .job-section mat-card-content ul li {
-    font-size: 60%;
-  } */
 
   .job-section mat-card-content ul{
     padding-left: 0;
@@ -208,12 +205,6 @@ mat-card mat-card-title mat-divider{
   .intro-shadow{
     top:100px;
   }
-  /* mat-card mat-card-title mat-icon{
-    z-index: 10;
-    font-size: 300%;
-    /* height: 50% !important;
-    width: 25% !important;
-  } */
   .middle-card-content{
     font-size: 100%;
   }
@@ -226,7 +217,7 @@ mat-card mat-card-title mat-divider{
     height:60vh;
   }
   .intro {
-    height:260px
+    height:100px
   }
   .intro mat-card-content{
     font-size: 70%;

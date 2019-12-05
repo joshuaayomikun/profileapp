@@ -1,5 +1,5 @@
 .scroll-section {
-    margin: 3rem;
+    margin: .3rem;
 }
 .intro{
     padding: 3rem;
@@ -32,6 +32,7 @@
 .map {
     right: 0;
     margin-left: 1rem;
+    width: 340px;
 }
 .about-me-mat-card{
     padding: 1rem;
@@ -53,10 +54,11 @@
     line-height: 25px;
 }
 .profile-pic-div{
-    top: 100px;
-    z-index:1000;
+    top: 0;
+    z-index: 1000;
     padding: 3rem;
-    position:absolute; 
+    padding-top: 0px;
+    position: absolute;
 }
 .scroll-section mat-card mat-card-title{
     font-size: 1.75rem;
@@ -86,7 +88,7 @@
 .map-fixed{
     top: 280px;
     width: 340px;
-    margin-right: 3rem;
+    margin-right: 1rem;
     position: fixed;
 }
 .profile-pic-div-fixed{
@@ -97,6 +99,7 @@
 }
 .profile-pic-div-fixed img{
     width: auto;
+    height: 150px;
 }
 .credentials {
     display: flex;
@@ -153,6 +156,7 @@
 
     .page-name{
         justify-content: flex-end;
+        padding-top: 60px;
     }
 
     .page-name h4{
@@ -202,6 +206,7 @@
     .map{
         top:71px;   
         margin-left: 1rem;
+        width: auto;
     }
     .map-fixed{
         top: 70px;

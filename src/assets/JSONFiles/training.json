@@ -1,0 +1,37 @@
+[
+	{
+		"Organizer":"Microsoft, Nigeria",
+		"ConferenceName":"Microsoft Partner Platform Enablement: Data platform BI Workshop",
+		"Year":2016,
+		"Month":"Apr",
+		"ConferenceLogo":"/assets/Images/TrainingLogo/microsoft.png"
+	},
+	{
+		"Organizer":"Koenig Solutions, India",
+		"ConferenceName":"Developing Microsoft Azure Solutions",
+		"Year": 2016 ,
+		"Month":"Sept",
+		"ConferenceLogo":"/assets/Images/TrainingLogo/koenig.png"
+	},
+	{
+		"Organizer":"Microsoft, USA",
+		"ConferenceName":"Microsoft Build Developer Conference",
+		"Year": 2017 ,
+		"Month":"May",
+		"ConferenceLogo":"/assets/Images/TrainingLogo/microsoft.png"
+	},
+	{ 
+		"Organizer":"Koenig Solutions, Nigeria",
+		"ConferenceName":"Microsoft Dynamics 365 - Extending Functionality",
+		"Year": 2017,
+		"Month":"Sept",
+		"ConferenceLogo":"/assets/Images/TrainingLogo/koenig.png"
+	},
+	{
+		"Organizer":"Microsoft, USA",
+		"ConferenceName":"Microsoft Build Developer Conference",
+		"Year": 2019,
+		"Month":"May",
+		"ConferenceLogo":"/assets/Images/TrainingLogo/microsoft.png"
+	}
+]

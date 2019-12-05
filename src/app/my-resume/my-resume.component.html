@@ -1,5 +1,5 @@
 <div appScrollSpyDirective [spiedTags]="['MAT-CARD']" (sectionChange)="onSectionChange($event)">
-  <div class="bg-dark">
+  <div class="bg-dark position-relative">
     <div class="page-name">
       <h4>My Resume</h4>
     </div>
@@ -7,7 +7,7 @@
     </div>
     <div class="profile-pic-div">
       <img width="200" height="200" class="rounded-circle"
-        src="https://media.licdn.com/dms/image/C5603AQEHFPNNFTst8A/profile-displayphoto-shrink_800_800/0?e=1574899200&v=beta&t=DFlG4p3cR2MUlFjBoKYpCJglkOQWNNBlqS1qYcFjoes" />
+        src="/assets/Images/profilepic.jpg" />
     </div>
     <app-particles [particleStyle]="myStyle"></app-particles>
   </div>
@@ -31,18 +31,20 @@
               <mat-card-title>Work History<mat-divider class="bg-white text-white"></mat-divider>
               </mat-card-title>
               <mat-card-content>
-                <mat-list *ngFor="let work of workHistory;" class="border border-white m-2">
+                <mat-list *ngFor="let work of workHistory;" class=" m-2 w-100">
+                    <mat-divider class="bg-white text-white"></mat-divider>
                   <mat-list-item class="text-white h-auto">
                     <h4>{{work.CompanyName}}</h4>
                   </mat-list-item>
+                  <mat-divider class="bg-white text-white"></mat-divider>
                   <ng-container *ngFor="let Position of work.Positions;" >
                     <mat-list-item class="text-white h-auto">
-                        <div class="d-flex justify-content-between w-100">
+                        <div class="d-flex justify-content-between w-100 my-2">
                           <h5>{{Position.Name}}</h5> <span>{{Position.Period}}</span>
                         </div>
                       </mat-list-item>
-                      <mat-list-item class="text-white h-auto" *ngFor="let JobDescrption of Position.JobDescrption;">
-                        <mat-icon matListIcon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon>
+                      <mat-list-item class="text-white h-auto text-wrap w-100 mb-2 text-justify" *ngFor="let JobDescrption of Position.JobDescrption;">
+                        <mat-icon class="mb-auto" style="font-size: medium;" matListIcon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon>
                         {{JobDescrption}}}
                   </mat-list-item>
                 </ng-container>
@@ -50,10 +52,41 @@
               </mat-card-content>
             </mat-card>
             <mat-card [id]="'paragraph2'" class="bg-dark text-white mt-5">
+              <mat-card-title>Trainingand & Conference<mat-divider class="bg-white text-white"></mat-divider>
+              </mat-card-title>
+              <mat-card-content>
+                <mat-list class=" m-2 w-100">
+                    <ng-container *ngFor="let train of training;" >
+                  <mat-list-item class="h-auto text-white">
+                    <mat-icon mat-list-icon class="h-auto w-auto"><img [src]="train.ConferenceLogo" style="width: 120px; height: 70px;"></mat-icon>
+                    <h4 mat-line class="d-block w-100">{{train.Organizer}}</h4>
+                    <div mat-line class="d-flex justify-content-between w-100"> 
+                      <h4 class="text-wrap w-75">{{train.ConferenceName}}</h4> 
+                      <p class="mr-1"> {{train.Month}} - {{train.Year}}</p>
+                    </div>
+                  </mat-list-item>
+                  </ng-container>
+                </mat-list>
+              </mat-card-content>
+            </mat-card>
+            <mat-card [id]="'paragraph3'" class="bg-dark text-white mt-5">
+              <mat-card-title>Certificate<mat-divider class="bg-white text-white"></mat-divider>
+              </mat-card-title>
+              <mat-card-content>
+                <mat-list class=" m-2">
+                  <mat-list-item *ngFor="let cert of certification;" class="h-auto text-white">
+                    <mat-icon mat-list-icon class="h-auto w-auto"><img [src]="cert.CertificateLogo" style="width: 70px; height: 70px;"></mat-icon>
+                    <h2 mat-line>{{cert.OrganizatioName}}</h2>
+                    <p mat-line> {{cert.CertificateName}}</p>
+                  </mat-list-item>
+                </mat-list>
+              </mat-card-content>
+            </mat-card>
+            <mat-card [id]="'paragraph4'" class="bg-dark text-white mt-5">
               <mat-card-title>Education History<mat-divider class="bg-white text-white"></mat-divider>
               </mat-card-title>
               <mat-card-content>
-                <mat-list class="border border-white m-2">
+                <mat-list class=" m-2">
                   <mat-list-item *ngFor="let school of education;" class="h-auto text-white">
                     <mat-icon mat-list-icon class="h-auto w-auto"><img [src]="school.SchoolLogo" style="width: 170px; height: 70px;"></mat-icon>
                     <h2 mat-line>{{school.SchoolName}}</h2>
@@ -65,12 +98,24 @@
         </div>
       </div>
       <div class="map">
-        <mat-card class="bg-dark shadow text-white">
-          <mat-card-content class="text-white">
+        <mat-card class="bg-dark shadow">
+          <mat-card-content class="">
             <mat-list role="list">
               <mat-list-item>
-                <a mat-button (click)="scrollTo('paragraph1')"
-                  [className]="currentSection==='paragraph1'? 'btn btn-success':''" role="listitem">Work History</a>
+                <a matLine (click)="scrollTo('paragraph1')"
+                  [className]="currentSection==='paragraph1'? 'text-white':'text-white-50'" role="listitem">Work History</a>
+              </mat-list-item>
+              <mat-list-item>
+                <a matLine (click)="scrollTo('paragraph2')"
+                  [className]="currentSection==='paragraph2'? 'text-white':'text-white-50'" role="listitem">Trainingand & Conference</a>
+              </mat-list-item>
+              <mat-list-item>
+                <a matLine (click)="scrollTo('paragraph3')"
+                  [className]="currentSection==='paragraph3'? 'text-white':'text-white-50'" role="listitem">Certificate</a>
+              </mat-list-item>
+              <mat-list-item>
+                <a matLine (click)="scrollTo('paragraph4')"
+                  [className]="currentSection==='paragraph4'? 'text-white':'text-white-50'" role="listitem">Education History</a>
               </mat-list-item>
             </mat-list>
           </mat-card-content>
