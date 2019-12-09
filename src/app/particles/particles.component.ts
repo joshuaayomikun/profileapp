@@ -5,6 +5,7 @@ import { Component, OnInit, Input, EventEmitter, } from '@angular/core';
   templateUrl: './particles.component.html',
   styleUrls: ['./particles.component.css']
 })
+
 export class ParticlesComponent implements OnInit {
   @Input() public particleParams = {};
   @Input() public particleStyle = {};
@@ -13,12 +14,12 @@ export class ParticlesComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    //console.log(Object.keys(this.particleStyle).length)
-// tslint:disable-next-line: no-string-literal
+    // console.log(Object.keys(this.particleStyle).length)
+    // tslint:disable-next-line: no-string-literal
     this.myStyle = Object.keys(this.particleStyle).length === 0 ? {
       position: 'absolute',
       width: '100%',
-      height: '80vh',
+      height: 'inherit',
       'z-index': 1,
       top: 0,
       left: 0,
@@ -40,5 +41,4 @@ export class ParticlesComponent implements OnInit {
       }
     };
   }
-
 }

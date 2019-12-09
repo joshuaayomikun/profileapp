@@ -6,6 +6,8 @@ import {
   animate,
   transition
 } from '@angular/animations';
+import { AboutMeService } from '../service/about-me.service';
+import { TechSkill } from '../model/tech-skill';
 @Component({
   selector: 'app-landing-page',
   templateUrl: './landing-page.component.html',
@@ -32,15 +34,17 @@ import {
         animate('1s')
       ])
     ])
-  ]
+  ],
+  providers: [AboutMeService],
 })
 export class LandingPageComponent implements OnInit {
    loaded = true;
    onceScrolled = false;
    timesScrolled = 0;
+   techSkills: TechSkill[];
     // width: number = 100;
     // height: number = 100;
-  constructor(private el: ElementRef) {
+  constructor(private el: ElementRef, private aboutMeService: AboutMeService) {
     console.log(el);
   }
   @HostListener('window:scroll', ['$event'])
@@ -65,10 +69,13 @@ export class LandingPageComponent implements OnInit {
   private heroOffset(scrollPosition: number) {
     return this.el.nativeElement.querySelector('.hero').getBoundingClientRect().top + scrollPosition - document.documentElement.clientTop;
   }
-  sendmail(): string{
+  sendmail(): string {
     return 'done';
   }
-
+  GetTechSkill() {
+    this.aboutMeService.getTechSkill().subscribe( techSkills => this.techSkills = techSkills);
+  }
   ngOnInit() {
+    this.GetTechSkill();
   }
 }

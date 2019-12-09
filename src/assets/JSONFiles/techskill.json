@@ -1,0 +1,26 @@
+[
+  {
+	  "SkillClassification":"Machine Learning Tools & Techniques ",
+	  "Skills":["Databricks","MLlib", "Spark","Exploratory", "Data Analysis","Data Modelling","Recommendation & Predictive systems","ML Studio"]
+  },
+  {
+	  "SkillClassification":"Databases and Stores",
+	  "Skills":["PostgreSQL", "MSSQL Server", "MySQL", "NoSQL", "Cosmos DB", "Cloud Storage (i.e. Blobs/Lakes)"]
+  },
+  {
+	  "SkillClassification":"Data Engineering/Processing",
+	  "Skills":[ "Python", "R", "Databricks", "Apache Spark", "Data Warehousing", "ETL Operations", "Azure Data Factory", "HDInsight", "Lambda Architecture"]
+  },
+  {
+	  "SkillClassification":"Cloud Technologies",
+	  "Skills":["MS Azure", "AWS", "IBM Cloud", "Data Science Virtual Machine."]
+  },
+  {
+	  "SkillClassification":"Developer tools",
+	  "Skills":[ ".NET Technologies", "Entity Framework", "Dapper", "Visual Studio", "VS code", "Docker containerization", "N-tier Architecture."]
+  },
+  {
+	  "SkillClassification":"Off-the-shelf Enterprise Tools",
+	  "Skills":["Microsoft CRM Dynamics", "SharePoint", "Office365 Apps"]
+  }
+]

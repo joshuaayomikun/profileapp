@@ -17,13 +17,7 @@
         <mat-card class="about-me-mat-card shadow bg-dark">
           <mat-card-content class="text-white">
             <p>Anthony Oluitan</p>
-            <p>I am goal driven, self-motivated and
-              resourceful, with passion for achieving goals and tasks assigned in a dynamic organisation/institution.
-              Over
-              time, I have gained technical, business and management skills via education and work place experiences.
-              I am able to work in a stimulating and challenging environment to optimise my capacity and create room for
-              acquisition of new skills
-            </p>
+            <p>I am a full stack Data Scientist, I have sturdy fluency in data engineering tools and techniques; data visualization software such as Power BI, Tableau, Dash(Plotly), JavaScript libraries etc. I have years of experience in processing large scale data with cloud technologies such as Azure Data Services, IBM cloud, etc. I am a Microsoft Certified Professional and cloud systems architect with 5+ years of experience.</p>
           </mat-card-content>
         </mat-card>
         <div class="scroll-section">
@@ -43,16 +37,16 @@
                           <h5>{{Position.Name}}</h5> <span>{{Position.Period}}</span>
                         </div>
                       </mat-list-item>
-                      <mat-list-item class="text-white h-auto text-wrap w-100 mb-2 text-justify" *ngFor="let JobDescrption of Position.JobDescrption;">
+                      <mat-list-item class="text-white h-auto text-wrap w-100 mb-2" *ngFor="let JobDescrption of Position.JobDescrption;">
                         <mat-icon class="mb-auto" style="font-size: medium;" matListIcon fontSet="fas" fontIcon="fa-chevron-right"></mat-icon>
-                        {{JobDescrption}}}
+                        {{JobDescrption}}
                   </mat-list-item>
                 </ng-container>
                 </mat-list>
               </mat-card-content>
             </mat-card>
             <mat-card [id]="'paragraph2'" class="bg-dark text-white mt-5">
-              <mat-card-title>Trainingand & Conference<mat-divider class="bg-white text-white"></mat-divider>
+              <mat-card-title>Training & Conference<mat-divider class="bg-white text-white"></mat-divider>
               </mat-card-title>
               <mat-card-content>
                 <mat-list class=" m-2 w-100">
@@ -107,7 +101,7 @@
               </mat-list-item>
               <mat-list-item>
                 <a matLine (click)="scrollTo('paragraph2')"
-                  [className]="currentSection==='paragraph2'? 'text-white':'text-white-50'" role="listitem">Trainingand & Conference</a>
+                  [className]="currentSection==='paragraph2'? 'text-white':'text-white-50'" role="listitem">Training & Conference</a>
               </mat-list-item>
               <mat-list-item>
                 <a matLine (click)="scrollTo('paragraph3')"

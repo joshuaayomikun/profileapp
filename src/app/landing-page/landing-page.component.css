@@ -1,53 +1,57 @@
 .hero {
   padding: 3rem 0;
-  height:80vh;
+  height: inherit;
 }
+
 .price-list:hover {
-    -webkit-transition: .2s ease-in  !important;
-    -o-transition: .2s ease-in  !important;
-    transition: .2s ease-in  !important;
-    /* -webkit-transform: scale(1.1)  !important;
+  -webkit-transition: .2s ease-in !important;
+  -o-transition: .2s ease-in !important;
+  transition: .2s ease-in !important;
+  /* -webkit-transform: scale(1.1)  !important;
     transform: scale(1.1) !important; */
-    border: 1px solid white !important;
-    color:white !important;
-    z-index: 999;
+  border: 1px solid white !important;
+  color: white !important;
+  z-index: 999;
 }
-.price-list{
-    text-shadow: 1px 1px 3px #1b1b1b;
-    margin-bottom: 15px;
+
+.price-list {
+  text-shadow: 1px 1px 3px #1b1b1b;
+  margin-bottom: 15px;
 }
+
 .hero.scrolled {
   /*margin-top: 50px;*/
   padding-top: 90px;
   background: black;
 }
-.job-year > .mat-chip-list-wrapper {
-    -ms-flex-wrap: unset !important;
-        flex-wrap: unset !important;
-}
 
 mat-card-content ul {
-  letter-spacing: 2px; 
+  letter-spacing: 2px;
   line-height: 35px;
 }
-.intro-shadow{
-  margin: auto;
+
+.intro-shadow {
+  margin-left: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   color: #fff;
-  text-align: center;
   top: 100px;
-  position: absolute;  
-  z-index: 1800;    
+  position: absolute;
+  z-index: 1800;
   right: 0;
   left: 0;
-  width: 70%;
+  width: 350px;
 }
-mat-card mat-card-title mat-icon{
+
+mat-card mat-card-title mat-icon {
   z-index: 10;
   border: 1px white;
   background-color: white;
@@ -57,197 +61,61 @@ mat-card mat-card-title mat-icon{
   padding: 1.5rem;
   border-radius: 50%;
 }
-mat-card mat-card-title mat-divider{
+
+mat-card mat-card-title mat-divider {
   background: white;
 }
-.middle-card-content{
+
+.middle-card-content {
   letter-spacing: 2px;
   line-height: 25px;
 }
 
-.middle-card-content p{
+.middle-card-content p {
   text-align: center;
   font-weight: bold;
   color: white;
 }
-.intro{
-  background-color: #00000061;
-  height: 350px;
-}
-.intro > mat-card-content{
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  height: 100%;
-  letter-spacing: 2px; 
-  line-height: 25px;
-}
-.intro mat-card-content > h4, .intro mat-card-content > h1{
-  padding: 1rem;
-}
 
-.card-section{
+.card-section {
   padding: 3rem;
 }
 
-.job-section{
-  padding: 3rem 0;
-}
-.job-section > div.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
+@media (max-width: 767px) {
 
-.job-section > div.container > div{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.job-section > div.container > div > mat-card{
-  color: #fff;
-  margin-bottom: 1.5rem;
-} 
-.job-section mat-card-content ul li {
-  list-style-position: outside;
-  padding: 10px;
-  display: block;
-}
-
-.job-section mat-card {
-  width: 90%;
-}
-
-.job-title {
-  width: auto;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  font-size: 1.75rem;
-}
-
-.job-title h4{
-  width: 100%;
-  text-align: center;
-}
-.job-description span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-
-.job-description span > p{
-  margin-bottom: 0;
-}
-.job-description span > mat-icon{
-    height: unset;
-    padding-right: .5rem;
-    width: unset;
-}
-@media (max-width: 767px)  {
-  .job-title{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font-size: 60%;
-    font-weight: bold
-  }
-  .job-section > div > div{
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .job-section > div > div > mat-card{
-    max-width: 100%;
+  .intro-shadow {
+    top: 100px;
   }
 
-  .job-section mat-card+div {
-    margin-left: .25rem!important;
-  }
-
-  .job-section mat-card-content ul{
-    padding-left: 0;
-    line-height: 30px;
-    letter-spacing: .01rem;
-  }
-  
-  .intro{
-    width: 100%
-  }
-
-  .intro h4{
-    font-size: 150%;
-  }
-  .intro h1{
-    font-size: 260%;
-  }
-  .intro-shadow{
-    top:100px;
-  }
-  .middle-card-content{
+  .middle-card-content {
     font-size: 100%;
   }
-  mat-card mat-card-title mat-icon{
+
+  mat-card mat-card-title mat-icon {
     font-size: 200%;
   }
 }
-@media (max-width: 425px)  {
+
+@media (max-width: 425px) {
   .hero {
-    height:60vh;
+    height: 60vh;
   }
-  .intro {
-    height:100px
+
+  .intro-shadow {
+    top: 50px;
   }
-  .intro mat-card-content{
-    font-size: 70%;
-  }
-  .intro mat-card-content > h4, .intro mat-card-content > h1{
-    padding: 0;
-  }
-  .intro-shadow{
-    top:50px;
-  }
-  .intro mat-card-content > h1{
-    font-size: 200%;
-  }
-  .card-section{
+
+  .card-section {
     padding: 1rem;
   }
-  .price-list mat-card-title mat-icon{
+
+  .price-list mat-card-title mat-icon {
     font-size: 100%;
     padding: 1rem;
   }
-  .middle-card-content p{
+
+  .middle-card-content p {
     font-size: 150%;
   }
-  .job-section > div.container > div{
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
 
-  .job-section[_ngcontent-my-app-c5] mat-card[_ngcontent-my-app-c5] {
-    width: 100%;
-  }
 }
